@@ -1,6 +1,5 @@
 function changeText1() {
     let x = document.getElementById('text1');
-    console.log(x);
     x.innerText = "모두들 코로나로 인해 많이 힘드시겠지만";
 }
 function changeText2() {
@@ -9,5 +8,5 @@ function changeText2() {
 }
 function changeText3() {
     let x = document.querySelector('.output #text3');
-    x.textContent = "코로나를 잘 이겨내봅시다💥"
+    x.textContent = "코로나를 잘 이겨내 봅시도지💥"
 }
