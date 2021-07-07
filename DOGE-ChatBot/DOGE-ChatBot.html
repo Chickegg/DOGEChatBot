@@ -11,10 +11,14 @@
     </head>
     <body>
         <div class="container">
-            <!-- <div class ="title">
-                <h1>도지 챗봇</h1>
-            </div> -->
-            <div class="output">DOGE !</div>
+            <div class ="title">
+                <h1>도지 챗봇 💬</h1>
+            </div>
+            <div class="output">
+                <p id = text1>모</a>
+                <p id = text2>각</a>
+                <p id = text3>코</a>
+            </div>
             <div class = "icon">
                 <img src ="https://image.edaily.co.kr/images/Photo/files/NP/S/2021/06/PS21060200161.jpg" alt = "도지">
             </div>
@@ -22,8 +26,12 @@
                 <input type="text" placeholder = "도지야 뭐하니?">
             </div>
             <div class="input">
-                <button><b>말걸기</b></button>
+                <button onclick= "changeText1()">👨‍🦲</button>
+                <button onclick= "changeText2()">🦵</button>
+                <button onclick= "changeText3()">👃</button>
+                <!-- <button><b>말걸기</b></button> -->
             </div>
         </div>      
+        <script src = "script.js"></script>
     </body>
 </html>
