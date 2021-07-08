@@ -10,3 +10,18 @@ function changeText3() {
     let x = document.querySelector('.output #text3');
     x.textContent = "코로나를 잘 이겨내 봅시도지💥"
 }
+
+let num = 0;
+let a = document.getElementById('Num');
+let doge = document.getElementById('doge_img');
+
+function reduce() {
+    if(num <= 10) {
+    console.log(num);
+    a.innerText = num++;
+    } else {
+        doge.src = "./images/doge2.jpg";
+        a.innerText = "👏"
+    }
+}
+

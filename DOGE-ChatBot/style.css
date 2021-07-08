@@ -16,11 +16,19 @@
     font-size: 2rem;
 }
 .icon {
-    width:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%
+    
 }
-.icon>img{
-    width: 100%;   
-    text-align:center;
+.icon>#doge_btn{
+    border:none;
+    padding:0px 0px;
+    height: 440px;
+}
+.icon>#doge_img {
+    border:none;
 }
 .text {
     display: flex;
