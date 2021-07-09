@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width:50%
+    width:50%;
     
 }
 .icon>#doge_btn{
@@ -29,6 +29,7 @@
 }
 .icon>#doge_img {
     border:none;
+    width:50%;
 }
 .text {
     display: flex;
