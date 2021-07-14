@@ -48,22 +48,16 @@ const nameButton = document.getElementById("nameBtn");
 const nameResetButton = document.getElementById("nameResetBtn");
 const nameOutput = document.getElementById("name");
 
-
-
-
-let namelist = ['0', 'm', 'i', 'n', '🙈', '🙉'];
+let namelist = ['🙈', '0', 'm', 'i', 'n', '🙉'];
 let L = namelist.length;
 let i = 0;
 let text = '';
-
-
 
 nameButton.onclick = function nameBtnClick() {
     if(i >= 0 && i < L) {
         text += namelist[i];
         nameOutput.textContent = text;
     } else if(i === L) {
-        // text = "저는" + text + "이라고 합니다😎";
         nameOutput.textContent = text;
         alert(text);
     } 
@@ -73,6 +67,6 @@ nameResetButton.onclick = function nameResetBtnClick() {
     text = '';
     nameOutput.textContent = '텅텅...';
     i = 0;
-    alert('잘 가 나의 모발들아..')
+    alert('비우자!')
 }
 

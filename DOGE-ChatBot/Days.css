@@ -7,36 +7,51 @@ body {
     align-items: center;
     margin-top: 5px;
     text-align: center;
-    font-family: 'Jua', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 #sevenDays {
     background-color: #212529;
     color: ivory;
-    border: 3px solid rgba(240, 181, 20, 0.500);
-    /* border-bottom-left-radius: 20px; */
+    /* border: 3px solid rgba(240, 181, 20, 0.700); */
+    border: 3px solid silver;
     border-radius: 20px 20px 20px 20px;
-    padding:10px 10px;
+    padding:20px 20px;
     margin: 2% 10%;
+    font-family: inherit;
 }
 #sevenDays>button {
     background-color: black;
     color: ivory;
     width:60px;
-    border:1px solid rgba(240, 181, 20);
+    border:1px solid silver;
     border-radius: 5px;
+    font-family: inherit;
+}
+#sevenDays>button:hover {
+    background-color: whitesmoke;
+    color:rgba(0, 0, 0);
 }
 #eightDays {
     background-color: #212529;
     color: ivory;
-    border: 3px solid rgba(240, 181, 20);
+    /* border: 3px solid rgba(240, 181, 20, 0.7); */
+    border: 3px solid silver;
     border-radius: 20px 20px 20px 20px;
     padding:20px 20px;
     margin: 2% 10%;
+    font-family: inherit;
 }
 #eightDays>button {
-    background-color: #212529;
+    background-color: black;
     color: ivory;
     width:60px;
-    border:1px solid rgba(240, 181, 20);
+    border:1px solid silver;
+    /* border:1px solid rgba(240, 181, 20); */
     border-radius: 5px;
+    font-family: inherit;
 }
+#eightDays>button:hover {
+    background-color: whitesmoke;
+    color:rgba(0, 0, 0);
+}
+
