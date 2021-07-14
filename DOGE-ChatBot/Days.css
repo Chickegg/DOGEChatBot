@@ -1,0 +1,42 @@
+body {
+    background-color: rgba(0, 0, 0, 0.850);
+}
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+}
+#sevenDays {
+    background-color: #212529;
+    color: ivory;
+    border: 3px solid rgba(240, 181, 20, 0.500);
+    /* border-bottom-left-radius: 20px; */
+    border-radius: 20px 20px 20px 20px;
+    padding:10px 10px;
+    margin: 2% 10%;
+}
+#sevenDays>button {
+    background-color: black;
+    color: ivory;
+    width:60px;
+    border:1px solid rgba(240, 181, 20);
+    border-radius: 5px;
+}
+#eightDays {
+    background-color: #212529;
+    color: ivory;
+    border: 3px solid rgba(240, 181, 20);
+    border-radius: 20px 20px 20px 20px;
+    padding:20px 20px;
+    margin: 2% 10%;
+}
+#eightDays>button {
+    background-color: #212529;
+    color: ivory;
+    width:60px;
+    border:1px solid rgba(240, 181, 20);
+    border-radius: 5px;
+}
