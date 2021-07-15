@@ -2,6 +2,7 @@
 btnbtn.onclick = function movie(i) {
     i = count;
     if(i < movies.length) {
+    movieImageOut.src = movies[i].image;
     movieIconOut.textContent = movies[i].icon;
     movieTitleOut.textContent = movies[i].title;
     moviedateOut.textContent = movies[i].date; 
@@ -14,24 +15,27 @@ btnbtn.onclick = function movie(i) {
 };
 
 let count = 0;
-let movieIconOut = document.getElementById('movie_icon');
-let movieTitleOut = document.getElementById('movie_title');
-let moviedateOut = document.getElementById('movie_date');
-let movieAudienceOut = document.getElementById('movie_audience');
-
+const movieIconOut = document.getElementById('movie_icon');
+const movieTitleOut = document.getElementById('movie_title');
+const moviedateOut = document.getElementById('movie_date');
+const movieAudienceOut = document.getElementById('movie_audience');
+const movieImageOut = document.getElementById('nineDays_image');
 let movie01 = {
+    image: "./image/spyderman2.jpg",
     icon: "🕷",
     title: "스파이더맨: 홈커밍",
     date: "2017.07.05",
     audience: "⭐ 8.83"
 };
 let movie02 = {
+    image: "./image/readyplayerone.jpg",
     icon: "🎮",
     title:"레디 플레이어 원",
     date: "2018.03.28",
     audience: "⭐ 8.73"
 };
 let movie03 = {
+    image: "./image/burning2.jpg",
     icon: "🔥",
     title:"버닝",
     date: "2018.05.17",

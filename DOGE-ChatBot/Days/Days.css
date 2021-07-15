@@ -76,29 +76,55 @@ body {
     font-family: inherit;
 }
 #nineDays {
+    
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    /* background:url("img/burning2.jpg"); */
     /* height: 500px; */
     padding: 10%;
     /* margin: 1%; */
     position: relative;
     z-index: 1;
     height: 100;
+    opacity: 1;
+    overflow: hidden;
 }
 #nineDays>.moviebox1 {
     padding-top:100px;
+    /* opacity: 1; */
+    z-index: 2;
 }
-#nineDays>.moviebox1::after {
+#nineDays>.nineDays_images {
+    width: auto;
+    height: auto;
+    position:absolute; 
+    top:0;
+    left:0;
+    z-index: -3;
+    opacity: 0.5;
+    overflow: hidden;
+
+
+    
+}
+
+
+/* #eightDays>button:hover {
+    background-color: whitesmoke;
+    color:rgba(10, 10, 10);
+} */
+
+/* #nineDays>.moviebox1::after {
     width: 100%;
     height: 100%;
     border-radius: 15px;
     content:"";
-    /* background:url("https://www.themoviedb.org/t/p/original/24GSBmRoQlX7tnHvH5BTPq2eMVQ.jpg"); */
+    background:url("https://www.themoviedb.org/t/p/original/24GSBmRoQlX7tnHvH5BTPq2eMVQ.jpg");
     background:url("img/burning2.jpg");
-    /* background:url("img/spyderman2.jpg"); */
-    /* background:url("img/readyplayerone.jpg"); */
-    /* background:url("img/spyderman2.jpg"); */
+    background:url("img/spyderman2.jpg");
+    background:url("img/readyplayerone.jpg");
+    background:url("img/spyderman2.jpg");
 
 
     position: absolute;
@@ -107,9 +133,4 @@ body {
     z-index: -1;
     opacity: 0.5;
     
-}
-/* #eightDays>button:hover {
-    background-color: whitesmoke;
-    color:rgba(10, 10, 10);
 } */
-
