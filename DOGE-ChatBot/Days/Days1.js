@@ -43,39 +43,3 @@ function Timer() {
     second.textContent = s > 9 ? s : '0' + s;
     min.textContent = m > 9 ? m : '0' + m;
 }
-
-const nameButton = document.getElementById("nameBtn");
-const nameResetButton = document.getElementById("nameResetBtn");
-const nameOutput = document.getElementById("name");
-
-let namelist = ['🙈', '0', 'm', 'i', 'n', '🙉'];
-let L = namelist.length;
-let i = 0;
-let text = '';
-
-nameButton.onclick = function nameBtnClick() {
-    if(i >= 0 && i < L) {
-        text += namelist[i];
-        nameOutput.textContent = text;
-    } else if(i === L) {
-        nameOutput.textContent = text;
-        alert(text);
-    } 
-    i++;
-}
-nameResetButton.onclick = function nameResetBtnClick() {
-    text = '';
-    nameOutput.textContent = '텅텅...';
-    i = 0;
-    alert('비우자!')
-}
-
-const movieTitle = document.getElementById("movie_title");
-const movieInfo = document.getElementById("moive_info");
-const movieRankBtn1 = document.getElementById('eight_btn');
-
-let list = ['버닝', '엽기적인 그녀', '스파이더맨:홈커밍']
-let movieI = 0
-movieRankBtn1.onclick = function(){
-    movieTitle.textContent = list[movieI];
-}
