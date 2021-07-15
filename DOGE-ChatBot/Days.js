@@ -70,3 +70,12 @@ nameResetButton.onclick = function nameResetBtnClick() {
     alert('비우자!')
 }
 
+const movieTitle = document.getElementById("movie_title");
+const movieInfo = document.getElementById("moive_info");
+const movieRankBtn1 = document.getElementById('eight_btn');
+
+let list = ['버닝', '엽기적인 그녀', '스파이더맨:홈커밍']
+let movieI = 0
+movieRankBtn1.onclick = function(){
+    movieTitle.textContent = list[movieI];
+}

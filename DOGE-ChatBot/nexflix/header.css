@@ -1,0 +1,45 @@
+header {
+    top: 0;
+    background: transparent;
+}
+.header_container{
+    display: flex;
+    align-items: center;
+}
+.logo, .main_nav, .sub_nav{
+    flex: 0 0 auto;
+}
+.main_nav{
+    display: flex;
+    align-items: center;
+}
+.sub_nav{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header_container{
+    width:100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index:2;
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 10%, rgba(500, 100, 100, 100));
+    color: #ddddff;
+    font-size: 0.9rem;
+}
+.logo a img {
+    height: 1em;
+}
+
+.logo .header_toggleBtn{
+    display: none;
+}
+.main_nav .main_nav_tab{
+    padding-left: 1rem;
+}
+.sub_nav .sub_nab_tab{
+    padding-right: 1rem;
+}

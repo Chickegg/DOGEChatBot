@@ -42,4 +42,12 @@ function datatype() {
     console.log(typeof(f));
     console.log(typeof(g));
 }
-
+// function calculate() {
+//     let x = 3;
+//     let y = 4;
+//     console.log("x + y =", x + y);
+//     console.log("x - y =", x - y);
+//     console.log("x * y =", x * y);
+//     console.log("x / y =", x / y);
+//     console.log("x % y =", x % y);
+// }
