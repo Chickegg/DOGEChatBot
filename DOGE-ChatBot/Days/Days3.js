@@ -1,25 +1,53 @@
 
 btnbtn.onclick = function movie(i) {
-    i = count;
+    i = movieCount;
     if(i < movies.length) {
+        
     movieImageOut.src = movies[i].image;
     movieIconOut.textContent = movies[i].icon;
     movieTitleOut.textContent = movies[i].title;
     moviedateOut.textContent = movies[i].date; 
     movieAudienceOut.textContent = movies[i].audience; 
+
+    movieIconImgOut.src= "./image/background.JPG"
+
+    // callNameOut.textContent = "";
+    // callNumOut.textContent = "";
     } else {
         return alert("끝");
     }
-    console.log(count);
-    count++;
+    console.log(movieCount);
+    movieCount++;
 };
 
-let count = 0;
+callbtn.onclick = function call(i) {
+    i = movieCount -1;
+    setTimeout(() => {
+    movieIconImgOut.src= Contacts[i].img;
+    movieTitleOut.textContent = Contacts[i].name;
+    moviedateOut.textContent = Contacts[i].callNum;
+    movieAudienceOut.textContent = Contacts[i].time;
+    // callNameOut.textContent = Contacts[i].name;
+    // callNumOut.textContent = Contacts[i].callNum;
+    }, 2000);
+    console.log(i);
+    callCount++;
+};
+
+
+let movieCount = 0;
 const movieIconOut = document.getElementById('movie_icon');
+const movieIconImgOut = document.getElementById("call_img");
 const movieTitleOut = document.getElementById('movie_title');
 const moviedateOut = document.getElementById('movie_date');
 const movieAudienceOut = document.getElementById('movie_audience');
 const movieImageOut = document.getElementById('nineDays_image');
+
+let callCount = 0;
+// const callNameOut = document.getElementById('call_name');
+// const callNumOut = document.getElementById('call_number');
+
+
 let movie01 = {
     image: "./image/spyderman2.jpg",
     icon: "🕷",
@@ -42,7 +70,27 @@ let movie03 = {
     audience: "⭐ 7.81"
 };
 
-const movies = [movie01, movie02, movie03];
+let call01 = {
+    name: "Tom Holland",
+    callNum: "+442912345678",
+    img: "./image/TomHolland2.jpg",
+    time:"00:00"
+}
+let call02 = {
+    name: "Mark Rylance",
+    callNum: "(251)123-0001",
+    img : "./image/MarkRylance.jpg",
+    time:"00:00"
+}
+let call03 = {
+    name: "엄홍식",
+    callNum: "010-1234-5678",
+    img: "./image/UHS.PNG",
+    time:"00:00"
+}
+
+let movies = [movie01, movie02, movie03];
+let Contacts = [call01, call02, call03];
 
 /* <h1>🎥 🎬</h1>
 <h3 id ="A">Title</h3>
