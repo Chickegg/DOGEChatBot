@@ -1,0 +1,103 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+  background-color: white;
+}
+header {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 13%;
+    background: linear-gradient(
+        130deg, goldenrod 0%, orange 50%, orangered 100%) center;
+    /* transform: translateZ(0px); */
+    text-align: center;
+}
+/* 밑으로 갈 수록 연해지는 그라데이션 효과부분 */
+header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3%;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0) 0%, rgb(246, 246, 247) 100%)
+}
+section {
+    position: fixed;
+    width: 100%;
+    height: 77%;
+    top:15%;
+    left:0;
+    background-color: white;
+    overflow-y: scroll;
+}
+footer {
+    width: 100%;
+    height: 7%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+footer>#text_input_typing {
+    background-color: rgb(255, 165, 0, 0.4);
+    border:none;
+    padding-left: 5%;
+    padding-right: 3%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 77%;
+    height: 100%;
+}
+footer>#text_input_typing:focus {
+    outline: none;
+}
+footer>#text_input_click {
+    position: absolute;
+    background-color: rgb(255, 165, 0, 0.8);
+    border: none;
+    /* border-top-left-radius: 5px; */
+    /* border-bottom-left-radius: 5px; */
+    top: 0;
+    left: 85%;
+    width: 15%;
+    height: 100%;
+}
+.text_output>.text_output_border{
+    display:flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    /* flex-wrap: wrap; */
+    align-items:flex-end;
+
+}
+
+#saybox {
+    background-color: rgb(255, 165, 0, 0.4);
+    max-width: 85%;
+    padding: 8px 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    /* font-size: 1.2rem; */
+
+    border-radius: 15px 15px;
+    border-bottom-right-radius: 0px;
+    word-break:break-all;
+}
+#reversebox {
+    align-self: flex-start;
+    background-color: rgb(255, 165, 0, 0.8);
+    max-width: 85%;
+    padding: 8px 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    /* font-size: 1.2rem; */
+
+    border-radius: 15px 15px;
+    border-bottom-left-radius: 0px;
+    word-break:break-all;   
+}

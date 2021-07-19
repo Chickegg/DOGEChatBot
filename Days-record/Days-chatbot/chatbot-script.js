@@ -11,17 +11,17 @@ text_input_click.onclick = function() {
     textOutPut[0].appendChild(newText); // 자식 노드로 추가해줌
     newText.textContent = inputText;
 
-    console.log(inputText); 
+    if(inputText === "멍청한 강아지") {
+        let newText = document.createElement("div"); // DOM객체 생성
+        newText.setAttribute("id", "reversebox"); // DOM 객체의 class값 지정
     
-    // let newDIV = document.createElement("p"); // DOM객체 생성
-    // newDIV.setAttribute("class","say_box"); // DOM객체의 class값을 정해줌.
-    // newDIV.style.backgroundColor = "green"; //style값을 지정
+        textOutPut[0].appendChild(newText); // 자식 노드로 추가해줌
+        let newReverseText = "저는 멍청하지 않아요😥"
+        newText.textContent = newReverseText;
 
-    // textOutPut[0].appendChild(newDIV); //자식 노드로 추가해줌.
-
-
-    
-    // newDIV.innerHTML = textInputTyping;
+        alert("나쁜말 금지❗"); 
+        console.log(newReverseText);
+    }
 
 }
 let text = [];

@@ -85,18 +85,15 @@ let call02 = {
 let call03 = {
     name: "엄홍식",
     callNum: "010-1234-5678",
-    img: "./image/UHS.PNG",
+    img: "./image/UHS.jpg",
     time:"00:00"
 }
 
 let movies = [movie01, movie02, movie03];
 let Contacts = [call01, call02, call03];
 
-/* <h1>🎥 🎬</h1>
-<h3 id ="A">Title</h3>
-<h3 id ="B">date</h3>
-<h3 id ="C">audience</h3>
-<button id = "D">Rank1</button> */
+
+/// 챗봇 기능 관련 부분
 
 chatboticon.onclick = function() {
     chatBotIcon.style.display = "none";
