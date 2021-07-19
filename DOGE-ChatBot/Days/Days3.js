@@ -97,3 +97,10 @@ let Contacts = [call01, call02, call03];
 <h3 id ="B">date</h3>
 <h3 id ="C">audience</h3>
 <button id = "D">Rank1</button> */
+
+chatboticon.onclick = function() {
+    chatBotIcon.style.display = "none";
+    chatBotIconOn.style.visibility = "visible";
+}
+const chatBotIcon = document.getElementById('chatboticon');
+const chatBotIconOn = document.getElementById('chatboticonOn');
