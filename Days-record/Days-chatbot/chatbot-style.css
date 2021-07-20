@@ -26,6 +26,26 @@ header::before {
     background: linear-gradient(
         rgba(255, 255, 255, 0) 0%, rgb(246, 246, 247) 100%)
 }
+header>.chatbot_close_btn {
+    width: 18px;
+    height: 18px;
+    position: fixed;
+    top: 12px;
+    right:16px;
+    background: url("https://cdn.channel.io/plugin/images/close2-white.png");
+    background-size: cover;;
+}
+/* header>.chatbot_close_btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 0;
+    top: 0;
+    right:0;
+    background: url("https://cdn.channel.io/plugin/images/close2-white.png");
+} */
 section {
     position: fixed;
     width: 100%;
