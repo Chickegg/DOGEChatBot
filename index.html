@@ -15,7 +15,7 @@
                 <h1>도지 챗봇 💬</h1>
             </div>
             <div class="output">
-                <p id = text1></a>
+                <p id ="text1"></a>
                 <p id = text2></a>
                 <p id = text3></a>
                 <p id = Num></p>
@@ -24,17 +24,17 @@
                 <button type = "button" id ="doge_btn" onclick = "reduce()"><img id ="doge_img" src ="./images/doge1.jpg" alt = "도지"></button>
             </div>
             <div class = "text">       
-                <input type="text" placeholder = "도지야 뭐하니?">
+                <input class = "text_typing_input" type="text" value="" placeholder = "도지야 뭐하니?" />
             </div>
             <div class="input">
-                <button onclick= "changeText1()">👨‍🦲</button>
+                <button onclick= "changeText1()">❓</button>
                 <button onclick= "changeText2()">🦵</button>
                 <button onclick= "changeText3()">👃</button>
-                <!-- <button onclick= "datatype()">필요한것</button> -->
-                 <button><a href="./Days-record/Days.html">둘러보기</a></button>
+                <button><a href="./Days-record/Days.html">둘러보기</a></button>
+                <!-- <button onclick= "datatype()">필요한것</button>  -->
                 <!-- <button ><b>떡상버튼</b></button> -->
             </div>
         </div>      
-        <script src = "script.js"></script>
+        <script src = "./script.js"></script>
     </body>
 </html>

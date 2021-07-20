@@ -1,6 +1,6 @@
 function changeText1() {
     let x = document.getElementById('text1');
-    x.innerText = "모두들 코로나로 인해 많이 힘드시겠지만";
+    x.innerText = "모두들 힘드시겠지만"
 }
 function changeText2() {
     let x = document.getElementById('text2');

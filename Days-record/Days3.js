@@ -8,8 +8,13 @@ btnbtn.onclick = function movie(i) {
     movieTitleOut.textContent = movies[i].title;
     moviedateOut.textContent = movies[i].date; 
     movieAudienceOut.textContent = movies[i].audience; 
+    
+    if(daysRecordLink.getAttribute("href") === "dark_mode.css") {
+        movieIconImgOut.src= "./image/dark_mode_background.JPG";
+    } else {
+        movieIconImgOut.src= "./image/light_mode_background.JPG";
+    }
 
-    movieIconImgOut.src= "./image/background.JPG"
 
     // callNameOut.textContent = "";
     // callNumOut.textContent = "";
@@ -42,6 +47,7 @@ const movieTitleOut = document.getElementById('movie_title');
 const moviedateOut = document.getElementById('movie_date');
 const movieAudienceOut = document.getElementById('movie_audience');
 const movieImageOut = document.getElementById('nineDays_image');
+const daysRecordLink = document.getElementById('mode_css');
 
 let callCount = 0;
 // const callNameOut = document.getElementById('call_name');

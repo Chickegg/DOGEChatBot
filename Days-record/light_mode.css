@@ -75,10 +75,11 @@ body {
     font-family: inherit;
 }
 #nineDays {
+    background-color: ivory;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    background:url("img/burning2.jpg");
+    /* background:url("./image/burning2.jpg"); */
     /* height: 500px; */
     padding: 3%;
     /* margin: 1%; */
