@@ -1,0 +1,146 @@
+body {
+    background-color: whitesmoke;
+}
+.daysbox {
+    /* width: 80%; */
+    /* height: 350px; */
+    background-color: rgb(255, 165, 0, 0.5);
+    color: black;
+    /* border: 3px solid rgba(240, 181, 20, 0.700); */
+    border: 3px solid silver;
+    border-radius: 20px 20px 20px 20px;
+    padding:20px 20px;
+    margin: 2% 10%;
+    font-family: inherit;
+    align-items: center;
+}
+.input_btn>button{
+    background-color: ivory;
+    color: black;
+    width:60px;
+    border:1px solid silver;
+    border-radius: 5px;
+    font-family: inherit;
+}
+.input_btn>button:hover {
+    background-color: black;
+    color:ivory;
+    border:1px solid silver;
+}
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/* #sevenDays {
+    background-color: #212529;
+    color: ivory;
+    border: 3px solid rgba(240, 181, 20, 0.700);
+    border: 3px solid silver;
+    border-radius: 20px 20px 20px 20px;
+    padding:20px 20px;
+    margin: 2% 10%;
+    font-family: inherit;
+} */
+#sevenDays>button {
+    background-color: black;
+    color: ivory;
+    width:60px;
+    border:1px solid silver;
+    border-radius: 5px;
+    font-family: inherit;
+}
+#sevenDays>button:hover {
+    background-color: gray;
+    color:rgba(0, 0, 0);
+}
+/* #eightDays {
+    color: ivory;
+    border: 3px solid silver;
+    border-radius: 20px 20px 20px 20px;
+    padding:20px 20px;
+    margin: 2% 10%;
+    font-family: inherit;
+} */
+#eightDays>button {
+    background-color: black;
+    color: ivory;
+    width:60px;
+    border:1px solid silver;
+    /* border:1px solid rgba(240, 181, 20); */
+    border-radius: 5px;
+    font-family: inherit;
+}
+#nineDays {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background:url("img/burning2.jpg");
+    /* height: 500px; */
+    padding: 3%;
+    /* margin: 1%; */
+    position: relative;
+    z-index: 1;
+    height: 100;
+    opacity: 1;
+    overflow: hidden;
+}
+#nineDays>.moviebox1 {
+    padding-top:100px;
+    /* opacity: 1; */
+    z-index: 2;
+}
+#nineDays>.moviebox1>#call_img{
+    width: 250px;
+    height: 250px;
+    border: 5px solid #212529;
+    border-radius: 100px;
+    /* text-align:center; */
+    /* margin:0 auto; */
+    /* font-size:12px; */
+    /* vertical-align:middle; */
+    /* line-height:150px; */
+}
+#nineDays>.nineDays_images {
+    width: auto;
+    height: auto;
+    position:absolute; 
+    top:0;
+    left:0;
+    z-index: -3;
+    opacity: 0.8;
+    overflow: hidden;
+}
+#chatboticon {
+    width: 70px;
+    height: 70px; 
+    position: fixed; 
+    bottom: 2%; 
+    right: 2%; 
+    z-index: 4; 
+    border-radius: 35px;
+}
+#chatboticon>img{
+    width: 70px;
+    height: 70px; 
+    position: fixed; 
+    bottom: 2%; 
+    right: 2%; 
+    z-index: 4; 
+    border-radius: 35px;
+}
+#chatboticonOn {
+    width: 300px;
+    height: 500px;
+    border:none;
+    border-radius: 15px;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 3;
+    visibility: hidden;
+}
+
