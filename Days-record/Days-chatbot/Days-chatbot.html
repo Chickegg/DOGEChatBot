@@ -5,13 +5,13 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
         </style>
-        <link rel="stylesheet" href="./chatbot-style.css">
+        <link id = "mode_css" rel="stylesheet" href="./dark_mode_chatbot_style.css">
     </head>
     <body>
         <div class = "main">
             <header>
                 <div class = "chatbot_change_mode"></div>
-                <h2>도지 챗봇💬</h2>
+                <h3 id = "chatbot_title">🌙</h3>
                 <div class = "chatbot_close_btn"></div>
             </header>
 
@@ -21,7 +21,7 @@
 
             <footer class = "text_input">            
                 <input id = "text_input_typing" type="text" value="" autocomplete="off">
-                <input id = "text_input_click" type="button" value="🚀">
+                <input id = "text_input_click" type="button" value="⭐">
             </footer>
         </div>
         <script src ="chatbot-script.js"></script>
