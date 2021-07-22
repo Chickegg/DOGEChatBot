@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOGE</title>
+        <link id = "mode_css" rel="stylesheet" href="./dark_mode_chatbot_style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+        </style>
+
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://www.cssscript.com/demo/simple-typewriter-effect-pure-javascript-typewriterjs/typewriter.js"></script>
+        <script type="text/javascript">
+        
+            $(document).ready(function() {
+                let text = document.getElementById("reversebox");
+
+                let typewriter = new Typewriter(text, {
+                    loop: true
+                });
+                typewriter.typeString('명령어 목록:\n 불꺼줘, 불켜줘, 멍청한 강아지')
+                .pauseFor(2000)
+                .deleteAll()
+                .start()
+            })
+        </script>
+    </head>
+    <body>
+        <div class = "main">
+            <header>
+                <div class = "chatbot_change_mode"></div>
+                <h3 id = "chatbot_title">🌙</h3>
+                <div class = "chatbot_close_btn"></div>
+            </header>
+
+            <section class = "text_output">
+                <div id = "reversebox"></div>
+                <div class = "text_output_border"></div>
+
+            </section>
+
+            <footer class = "text_input">            
+                <input id = "text_input_typing" type="text" value="" autocomplete="off">
+                <input id = "text_input_click" type="button" value="⭐">
+            </footer>
+        </div>
+        <script src ="chatbot-script.js"></script>
+    </body>
+</html>
